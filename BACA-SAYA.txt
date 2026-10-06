@@ -1,0 +1,50 @@
+BANGUN SEBAGAI APLIKASI (PWA)
+=============================
+
+Isi paket (semua file harus berada di folder yang sama):
+  index.html              -> aplikasi Bangun (versi HP)
+  manifest.webmanifest    -> nama, ikon, dan warna aplikasi
+  sw.js                   -> supaya bisa dibuka tanpa internet
+  icon-192.png, icon-512.png, maskable-512.png, apple-touch-icon.png
+
+Penting: PWA harus dibuka lewat alamat https (bukan dibuka langsung dari folder
+Unduhan). Cara termudah memakai GitHub Pages (gratis), bisa dari browser HP.
+
+
+LANGKAH 1. Unggah ke GitHub Pages
+---------------------------------
+1. Buka github.com, daftar / masuk.
+2. Ketuk "+" > "New repository". Nama: bangun. Pilih Public. Ketuk "Create repository".
+3. Ketuk "uploading an existing file" (atau "Add file" > "Upload files").
+4. Pilih SEMUA file dari paket ini sekaligus, lalu ketuk "Commit changes".
+5. Masuk ke "Settings" > "Pages".
+   Source: "Deploy from a branch". Branch: "main", folder "/ (root)". Ketuk "Save".
+6. Tunggu 1-2 menit. Alamatnya akan seperti:
+   https://NAMAKAMU.github.io/bangun/
+
+
+LANGKAH 2. Pasang di HP
+-----------------------
+Android (Chrome):
+  Buka alamat tadi > ketuk tombol "Pasang aplikasi" di katalog,
+  atau menu titik tiga > "Tambahkan ke layar utama" / "Instal aplikasi".
+iPhone (Safari):
+  Buka alamat tadi > tombol Bagikan > "Tambah ke Layar Utama".
+
+Setelah terpasang, Bangun terbuka layar penuh dan tetap jalan tanpa internet.
+
+
+LANGKAH 3. Pindahkan bangunan lama
+----------------------------------
+Katalog tersimpan per alamat, jadi bangunan dari file lama tidak ikut otomatis.
+1. Di file lama: katalog > "Simpan proyek" (menghasilkan berkas .json).
+2. Di aplikasi baru: katalog > "Muat proyek" > pilih berkas .json tadi.
+Biasakan "Simpan proyek" sesekali sebagai cadangan.
+
+
+KALAU MEMPERBARUI APLIKASI
+--------------------------
+1. Ganti index.html di GitHub dengan versi baru.
+2. Buka sw.js, ubah  const VERSI = "bangun-v1";  menjadi "bangun-v2" (v3, dst.).
+3. Buka aplikasi di HP. Akan muncul pesan "Versi baru Bangun sudah terpasang".
+   Tutup lalu buka lagi aplikasinya.

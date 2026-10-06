@@ -1,0 +1,19 @@
+{
+  "name": "Bangun – Editor Bangunan Minecraft",
+  "short_name": "Bangun",
+  "description": "Susun bangunan, export sebagai addon, lalu pasang di dunia Minecraft dengan Tongkat Bangun.",
+  "lang": "id",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0e1318",
+  "theme_color": "#111820",
+  "categories": ["games", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
