@@ -1,6 +1,6 @@
 // sw.js — membuat Bangun tetap bisa dibuka tanpa internet.
 // Naikkan angka VERSI setiap kali index.html diperbarui, supaya HP mengambil versi baru.
-const VERSI = "bangun-v7";
+const VERSI = "bangun-v8";
 const BERKAS = [
   "./",
   "./index.html",
